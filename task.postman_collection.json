@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "bdfb72c6-f6e4-4fc7-b84f-924a103bb856",
+		"name": "task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44748255"
+	},
+	"item": [
+		{
+			"name": "api/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"test@gmail.com\",\r\n  \"email\": \"tests3@gmail.com\",\r\n  \"password\": \"Tara@1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/task/example-app/public/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"task",
+						"example-app",
+						"public",
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "eyJpdiI6Im53ellxQnhvcmZwaU5BWHBXYXl6MGc9PSIsInZhbHVlIjoiTi9iWFYwMkIxbll6WGh4TDVFWXFGNnhLdUVEOFBYYnZyWWZtQnp4ZmU3clpCblFYOGZqbFNGMkFPT1lOY0NkMTdTV0VRbHowUEh5K2pVYmtBK0xHQjBSM2JFMTNXblR2cUtlRXVqSTZpcWJlV1g3TE1MTTBtcnN3RGVTajVxNHgiLCJtYWMiOiI2NmZjY2QyNjU1MWM2YmMxNDE1YzVjOGNlMGY5ZDRmNmM0NWUzOGY5MGU4MjU1Yzc3NGZhNTMzZDUyMDI4ZmYxIiwidGFnIjoiIn0%3D",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"test@gmail.com\",\r\n  \"password\": \"Tara@1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/task/example-app/public/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"task",
+						"example-app",
+						"public",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|G4WTdYCxpSsz1OcLZHS5Q3fqMO570Tzns6lrAxrda95c4331",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/task/example-app/public/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"task",
+						"example-app",
+						"public",
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/posts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|G4WTdYCxpSsz1OcLZHS5Q3fqMO570Tzns6lrAxrda95c4331",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"newtat Title\",\r\n  \"body\": \"dsfsdfds content\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/task/example-app/public/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"task",
+						"example-app",
+						"public",
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/task/example-app/public/api/posts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorizations",
+						"value": "Bearer 1|G4WTdYCxpSsz1OcLZHS5Q3fqMO570Tzns6lrAxrda95c4331",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost/task/example-app/public/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"task",
+						"example-app",
+						"public",
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

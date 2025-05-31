@@ -1,0 +1,8 @@
+https://chatgpt.com/canvas/shared/683ada34d13c8191946dc1310f0d1709
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "StrongPass1!",
+  "password_confirmation": "StrongPass1!"
+}
